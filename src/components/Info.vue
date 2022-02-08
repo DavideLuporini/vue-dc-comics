@@ -1,11 +1,27 @@
 <template>
 <section class="content">
   <div class="container">
-      <div class="col">content goes here</div>
-      <div class="col">content goes here</div>
-      <div class="col">content goes here</div>
-      <div class="col">content goes here</div>
-      <div class="col">content goes here</div>
+      <a class="col">
+          <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+          <span>digital comincs</span>
+      </a>
+      <a class="col">
+          <img src="../assets/img/buy-comics-merchandise.png" alt="">
+          <span>digital comincs</span>
+      </a>
+      <a class="col">
+          <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+          <span>digital comincs</span>
+      </a>
+      <a class="col">
+          <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+          <span>digital comincs</span>
+      </a>
+      <a class="col">
+          <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+          <span>digital comincs</span>
+      </a>
+      
   </div>
 </section>
 </template>
@@ -17,7 +33,7 @@ name : 'info',
 </script>
 
 <style lang="scss" scoped>
-$container-width :  900px;
+$container-width :  950px;
 $container-margin :  0 auto;
 
 
@@ -26,9 +42,19 @@ $container-margin :  0 auto;
     justify-content: space-around;
     background-color: blue;
     color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
     .col{
         width: calc(100%/5);
         display: inline-flex;
+        align-items: center;
+        img{
+            height: 45px;
+            width: auto;
+        }
+        span{
+            padding-left: 20px;
+        }
     }
 }
 .container{

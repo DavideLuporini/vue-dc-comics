@@ -2,7 +2,7 @@
 <header>
   <div class="container">
     <figure>
-      
+      <img src="../assets/img/dc-logo.png" alt="">
     </figure>
     <ul>
       <li>characters</li>
@@ -29,25 +29,45 @@ export default {
 
 
 <style scoped lang="scss">
-$container-width :  900px;
+$container-width :  950px;
 $container-margin :  0 auto;
   
 .container{
   width: $container-width;
   margin: $container-margin;
+  display: flex;
+    justify-content: space-between;
 
 }
 header{
   background-color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  img{
+    width: 70px;
+    height: 100%;
+    
+  }
 
   ul{
     display: flex;
     justify-content: flex-end;
     margin-bottom: 0px;
+    align-items: center;
+    align-content: center;
+     li:hover {
+        border-bottom: 5px solid blue ;
+      }
     li{
       list-style-type: none;
-      margin-left: 20px;
-      
+      padding-left: 10px;
+      padding-right: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 10px;
+      align-items: center;
+      display: flex;
+      height: 100%;
     }
   }
 }
