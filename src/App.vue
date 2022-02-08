@@ -1,17 +1,24 @@
 <template>
   <div id="app">
     <Header />
+    <Content />
+    <Info />
+
     
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
+import Content from './components/Content.vue';
+import Info from './components/Info.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
+    Content,
+    Info,
   }
 }
 </script>

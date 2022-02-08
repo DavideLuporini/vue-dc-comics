@@ -43,6 +43,7 @@ header{
   ul{
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 0px;
     li{
       list-style-type: none;
       margin-left: 20px;
