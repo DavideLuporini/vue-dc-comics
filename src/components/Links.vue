@@ -1,6 +1,7 @@
 <template>
   <section class="links-section">
       <div class="container">
+          <div class="container-links">
           <div class="col">
             <ul>
                 <li>DC COMICS</li>
@@ -44,9 +45,12 @@
                 <li>DC Power visa</li>
 
             </ul>
+            </div>
           </div>
+          <div class=" col logo-bg">
+             
       </div>
-
+      </div>
 
   </section>
 </template>
@@ -65,18 +69,18 @@ $container-margin :  0 auto;
     background-image: url('../assets/img/footer-bg.jpg');
     background-size: cover;
     background-position: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
     color: white;
 }
 .container{
   width: $container-width;
   margin: $container-margin;
+  display: flex;
+  height: 100%;
     img{
         max-width: 100%;
     }
   .col{
-    width: calc(100%/4 - 5px);
+    width: calc(32% - 5px);
     display: inline-flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -98,6 +102,15 @@ $container-margin :  0 auto;
           }
       }
   }
-
+.logo-bg{
+background-image: url("../assets/img/dc-logo-bg.png");
+background-position: center;
+background-size: cover;
+}
+.container-links{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 65%;
+}
 }
 </style>

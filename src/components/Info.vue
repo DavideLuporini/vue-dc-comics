@@ -7,21 +7,20 @@
       </a>
       <a class="col">
           <img src="../assets/img/buy-comics-merchandise.png" alt="">
-          <span>digital comincs</span>
+          <span>dc merchandise</span>
       </a>
       <a class="col">
           <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-          <span>digital comincs</span>
+          <span>subscriptions</span>
       </a>
       <a class="col">
           <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-          <span>digital comincs</span>
+          <span>comic shop locator</span>
       </a>
       <a class="col">
           <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-          <span>digital comincs</span>
+          <span>dc power visa</span>
       </a>
-      
   </div>
 </section>
 </template>
@@ -37,29 +36,37 @@ $container-width :  950px;
 $container-margin :  0 auto;
 
 
+    .container{
+        width: $container-width;
+        margin: $container-margin;
+    }
 .content{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: #0282f9;
     color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    height: 150px;
     .col{
         width: calc(100%/5);
         display: inline-flex;
         align-items: center;
+        padding: 10px;
         img{
             height: 45px;
             width: auto;
+            padding-left: 15px;
         }
         span{
-            padding-left: 20px;
+            padding-left: 5px;
+            text-transform: uppercase;
+            font-size: 12px;
         }
     }
-}
-.container{
-    width: $container-width;
-    margin: $container-margin;
+        .col:hover{
+            border: 1px solid blue;
+            background-color: blue;
+        }
 }
 
 </style>
