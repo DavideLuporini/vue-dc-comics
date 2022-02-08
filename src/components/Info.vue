@@ -40,7 +40,7 @@ $container-margin :  0 auto;
 .content{
     display: flex;
     justify-content: space-around;
-    background-color: blue;
+    background-color: #0282f9;
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
